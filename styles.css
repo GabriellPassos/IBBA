@@ -1,0 +1,317 @@
+* {
+    font-family: 'Poppins';
+}
+
+.titulo {
+    font-family: 'Playfair Display';
+    width: 150px;
+    overflow-wrap: break-word;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.logo img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 21px;
+    right: 77px;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    overflow: hidden;
+    height: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    transition: .5s;
+    opacity: .9;
+    z-index: 99;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header:hover {
+    opacity: 1;
+}
+
+header .menu {
+    margin-left: 30px;
+}
+
+header .menu a {
+    margin: 0 10px;
+    opacity: .7;
+    cursor: pointer;
+    transition: .5s;
+    color: black;
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.conteudo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.yt-container {}
+
+.nossa-missao {
+    margin-top: 4rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 200px;
+    overflow: hidden;
+}
+
+.nossa-missao .sub-titulo {
+    font-size: 4rem;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    display: flex;
+
+}
+
+.nossa-missao p {
+    font-family: "Montserrat", serif;
+    line-height: 3ch;
+    font-size: 1.3rem;
+
+}
+
+/*SCROLL ANIMACAO*/
+.animacao-scroll.vertical {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.animacao-scroll.vertical.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animacao-scroll.horizontal {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease-out;
+}
+
+.animacao-scroll.horizontal.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* SLIDE*/
+.slider-apresentacao {
+    margin-top: 4rem;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 50%;
+    /* 100% para cada slide */
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+button:hover {
+    background: black;
+}
+
+/*Cartao de Visita*/
+.cartao-visita {
+    display: flex;
+    margin-top: 100px;
+
+}
+
+.cartao-visita span {
+    font-size: 3rem;
+    margin: auto;
+}
+
+.inverter-cor {
+    filter: invert(1);
+}
+
+/*Contato*/
+.contato{
+    display: flex;
+    padding:30px;
+}
+.contato .contato-container {
+    display: flex;
+    margin-top: 80px;
+
+}
+.contato .mapa-container{
+    margin-left: auto;
+    margin-top: 60px;
+}
+.contato .card-contato{
+    width: 200px;
+    height: 160px;
+    border:1px solid  rgba(205, 205, 205, 0.473);
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+ 
+}
+.contato .contato-container .icon-container {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        background-color: black;
+        transform: translate(-50%, -50%);
+        border: 1px solid;
+        left: 50%;
+        
+
+}
+.contato .contato-container .texto{
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+    text-align: center;
+
+}
+.contato .titulo{
+    font-size: 3rem;
+    font-family: "Poppins", serif;
+}
+.contato .mensagem{
+    font-size: 1.3rem;
+    font-family: "Montserrat", serif;
+}
+@media (min-width:1400px) {
+    .contato .mapa-container{
+    margin-right: 10%;
+    }
+}
+/*quem somos*/
+.quem-somos {
+    display: flex;
+    padding: 30px;
+}
+
+.quem-somos .texto-container {
+    width: 50%;
+}
+
+.quem-somos .texto-container .titulo {
+    font-size: 4rem;
+    font-family: "Poppins", serif;
+}
+
+.quem-somos .texto-container .texto {
+    font-family: "Montserrat", serif;
+    font-size: 1.3rem;
+}
+
+.quem-somos .img-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.quem-somos .img-container img {
+    border-radius: 20px;
+    max-height: 400px;
+}
+
+/*Footer*/
+footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px 0px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+footer section {
+    display: flex;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .dados-contato {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: auto;
+
+}
+
+footer .dados-contato span {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+footer .dados-contato img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

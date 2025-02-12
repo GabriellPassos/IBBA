@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja Batista da Biblia Aruja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="titulo">Igreja Batista da Biblía Arujá</h1>
+            <img src="./assets/logo.jpg">
+        </div>
+        <nav class="menu">
+            <a href="./index.html">Início</a>
+            <a href="./aovivo.html">Ao vivo</a>
+            <a href="./quemsomos.html">Quem Somos</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+    <div class="conteudo animacao-scroll vertical ">
+        <section class="contato ">
+            <div>
+                <span class="titulo">Entre em contato</span>
+                <p class="mensagem">Faça uma visita ou fale conosco.</p>
+                <div class="contato-container">
+                    <div class="card-contato ">
+                        <div class="icon-container">
+                            <img class="inverter-cor" src="./assets/icons/icons8-telefone-50.png">
+                        </div>
+                        <div class="texto">
+                            <p>(11) 99819-1224</p>
+                        </div>
+
+                    </div>
+                    <div class="card-contato ">
+                        <div class="icon-container">
+                            <img class="inverter-cor" src="./assets/icons/icons8-email-64.png">
+                        </div>
+                        <div class="texto">
+                            <p>IBBAruja@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="card-contato ">
+                        <div class="icon-container">
+                            <img class="inverter-cor" src="./assets/icons/icons8-marcador-50.png">
+                        </div>
+                        <div class="texto">
+                            <p>R. Vanderlei Nasser do Prado, 55
+                                Center Viller, Arujá SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapa-container animacao-scroll horizontal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.8528570092717!2d-46.328766325171294!3d-23.393539778915525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce879d2b7e154d%3A0x75b9090639a3dd57!2sR.%20Vanderlei%20Nasser%20do%20Prado%2C%2045%20-%20Center%20Ville%2C%20Aruj%C3%A1%20-%20SP%2C%2007401-120!5e0!3m2!1spt-BR!2sbr!4v1739319132366!5m2!1spt-BR!2sbr"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <div class="dados-contato">
+
+            <span><img class="inverter-cor" src="./assets/icons/icons8-telefone-50.png">(11) 99819-1224</span>
+
+            <span><img class="inverter-cor" src="./assets/icons/icons8-email-64.png">IBBAruja@gmail.com</span>
+
+            <span><img class="inverter-cor" src="./assets/icons/icons8-marcador-50.png">R. Vanderlei Nasser do Prado, 55
+                Center Viller, Arujá SP</span>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('.animacao-scroll').forEach((elemento) => { elemento.classList.add('show'); })
+    });
+</script>
+<script src="./script.js"></script>
+
+</html>
