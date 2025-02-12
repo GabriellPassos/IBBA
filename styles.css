@@ -1,7 +1,12 @@
 * {
     font-family: 'Poppins';
 }
-
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
 .titulo {
     font-family: 'Playfair Display';
     width: 150px;
