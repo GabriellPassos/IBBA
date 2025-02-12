@@ -1,12 +1,16 @@
 * {
     font-family: 'Poppins';
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+    overflow-x: hidden;
+    /* Evita rolagem horizontal indesejada */
 }
+
 .titulo {
     font-family: 'Playfair Display';
     width: 150px;
@@ -79,6 +83,7 @@ header .menu a:hover {
     margin-left: auto;
     margin-right: 200px;
     overflow: hidden;
+    padding: 0 0 0 30px;
 }
 
 .nossa-missao .sub-titulo {
@@ -95,7 +100,11 @@ header .menu a:hover {
     font-size: 1.3rem;
 
 }
-
+@media (max-width:993px) {
+    .nossa-missao {
+    width: 80%;
+    }
+}
 /*SCROLL ANIMACAO*/
 .animacao-scroll.vertical {
     opacity: 0;
@@ -124,32 +133,31 @@ header .menu a:hover {
     margin-top: 4rem;
 }
 
-.slider-container {
+.slider-apresentacao.slider-container {
     position: relative;
     width: 100%;
-    height: 450px;
     margin: auto;
     overflow: hidden;
 }
 
-.slider {
+.slider-apresentacao .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 50%;
     /* 100% para cada slide */
 }
 
-.slide {
+.slider-apresentacao .slide {
     width: 100%;
     flex-shrink: 0;
 }
 
-.slide img {
+.slider-apresentacao .slide img {
     width: 100%;
     display: block;
 }
 
-button {
+.slider-apresentacao button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -165,18 +173,22 @@ button {
     height: 70px;
 }
 
-.prev {
+.slider-apresentacao .prev {
     left: 20px;
 }
 
-.next {
+.slider-apresentacao .next {
     right: 20px;
 }
 
-button:hover {
+.slider-apresentacao button:hover {
     background: black;
 }
-
+@media (max-width:768px) {
+    .slider-apresentacao .slider{
+    width: 100%;
+    }
+}
 /*Cartao de Visita*/
 .cartao-visita {
     display: flex;
@@ -193,64 +205,79 @@ button:hover {
     filter: invert(1);
 }
 
-/*Contato*/
-.contato{
-    display: flex;
-    padding:30px;
+@media (max-width:993px) {
+    .cartao-visita span {
+       padding: 0 0 0 30px;
+    }
 }
+
+/*Contato*/
+.contato {
+    display: flex;
+    padding: 30px;
+}
+
 .contato .contato-container {
     display: flex;
     margin-top: 80px;
 
 }
-.contato .mapa-container{
+
+.contato .mapa-container {
     margin-left: auto;
     margin-top: 60px;
 }
-.contato .card-contato{
+
+.contato .card-contato {
     width: 200px;
     height: 160px;
-    border:1px solid  rgba(205, 205, 205, 0.473);
+    border: 1px solid rgba(205, 205, 205, 0.473);
     border-radius: 10px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
     margin-right: 30px;
- 
-}
-.contato .contato-container .icon-container {
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border-radius: 100%;
-        width: 80px;
-        height: 80px;
-        background-color: black;
-        transform: translate(-50%, -50%);
-        border: 1px solid;
-        left: 50%;
-        
 
 }
-.contato .contato-container .texto{
+
+.contato .contato-container .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    left: 50%;
+
+
+}
+
+.contato .contato-container .texto {
     display: flex;
     justify-content: center;
     margin-top: -34px;
     text-align: center;
 
 }
-.contato .titulo{
+
+.contato .titulo {
     font-size: 3rem;
     font-family: "Poppins", serif;
 }
-.contato .mensagem{
+
+.contato .mensagem {
     font-size: 1.3rem;
     font-family: "Montserrat", serif;
 }
+
 @media (min-width:1400px) {
-    .contato .mapa-container{
-    margin-right: 10%;
+    .contato .mapa-container {
+        margin-right: 10%;
     }
 }
+
 /*quem somos*/
 .quem-somos {
     display: flex;
@@ -278,9 +305,37 @@ button:hover {
 
 .quem-somos .img-container img {
     border-radius: 20px;
-    max-height: 400px;
+    
+    width: 100%;
 }
+@media (max-width:993px) {
+    .quem-somos{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .quem-somos .img-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        height: 300px;
+       
 
+    }
+    .quem-somos .img-container img {
+        display: none;
+    }
+    .quem-somos .img-container img:nth-child(1) {
+        display: flex;
+        border-radius: 0;
+        width: 100%;
+        
+    }
+    .quem-somos .texto-container{
+        width: 80%;
+        padding-left: 30px;
+    }
+}
 /*Footer*/
 footer {
     height: 200px;
