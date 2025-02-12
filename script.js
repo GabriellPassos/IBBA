@@ -32,4 +32,22 @@ function moverSlide(step) {
 document.addEventListener('scroll',()=>{
     scrollHandle()
 });
+//MENU HAMBURGUER
+document.addEventListener("DOMContentLoaded", function () {
+    const menuMobile = document.getElementById("menu-mobile");
+    const menu = document.getElementById("menu");
+
+    menuMobile.addEventListener("click", function () {
+        menu.classList.toggle("active");
+        menuMobile.classList.toggle("active");
+    });
+
+    // Fecha o menu ao clicar fora
+    document.addEventListener("click", function (e) {
+        if (!menu.contains(e.target) && !menuMobile.contains(e.target)) {
+            menu.classList.remove("active");
+            menuMobile.classList.remove("active");
+        }
+    });
+});
 
