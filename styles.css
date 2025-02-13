@@ -155,11 +155,12 @@ header .menu-desktop a:hover {
     margin-top: 4rem;
 }
 
-.slider-apresentacao.slider-container {
+.slider-apresentacao .slider-container {
     position: relative;
     width: 100%;
     margin: auto;
     overflow: hidden;
+    height: 500px;
 }
 
 .slider-apresentacao .slider {
