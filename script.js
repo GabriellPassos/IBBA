@@ -51,3 +51,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//YOUTUBE
+document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('resize', () => {
+        redimensionarVideo()
+    })
+    redimensionarVideo()
+    console.log(window.innerWidth)
+});
+const YTplayers = document.querySelectorAll('.yt-container iframe')
+function redimensionarVideo() {
+    YTplayers.forEach((ytplayer) => {
+        if (window.innerWidth <= 425) {
+            ytplayer.setAttribute('height', '250')
+            return;
+        }
+        if (window.innerWidth <= 700) {
+            ytplayer.setAttribute('height', '400')
+            return;
+        }
+        else{
+            ytplayer.setAttribute('height', '500')
+        }
+    })
+}

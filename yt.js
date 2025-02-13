@@ -42,3 +42,5 @@ setInterval(verificarLive, 60000);
 
 // Executar a primeira verificação ao carregar a página
 verificarLive();
+
+
