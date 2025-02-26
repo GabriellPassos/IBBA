@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Evita rolagem horizontal indesejada */
+}
+
+.titulo {
+    font-family: 'Playfair Display';
+    width: 140px;
+    overflow-wrap: break-word;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.logo img {
+    position: relative;
+    width: auto;
+    height: 110px;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    overflow: hidden;
+    height: 110px;
+    width: 200px;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0px 40px 0px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    transition: .5s;
+    opacity: .9;
+    z-index: 99;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 125px;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+header .menu-desktop {
+    margin-left: 30px;
+    display: flex;
+}
+
+header .menu-desktop a {
+    margin: 0 10px;
+    opacity: .7;
+    cursor: pointer;
+    transition: .5s;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header .menu-desktop a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.conteudo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+@media (max-width:425px) {
+    header {
+        padding: 0 20px 0;
+    }
+
+    .nossa-missao .sub-titulo {
+        font-size: 2.5rem;
+    }
+
+    .nossa-missao .texto {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*SCROLL ANIMACAO*/
+.animacao-scroll.vertical {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.animacao-scroll.vertical.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animacao-scroll.horizontal {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease-out;
+}
+
+.animacao-scroll.horizontal.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*Footer*/
+footer {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: #034C8C;
+    color: white;
+
+}
+
+footer .container-logo-f {
+    height: 70%;
+    margin-left: 2.5rem;
+}
+
+footer .container-logo-f img {
+    height: 100%;
+
+}
+
+footer section {
+    display: flex;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .dados-contato {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: auto;
+
+}
+
+footer .dados-contato .redes-sociais {
+    display: flex;
+    gap: 6px;
+    margin-top: 0.5rem;
+
+}
+
+footer .dados-contato .redes-sociais img {
+
+    height: 40px;
+    width: 40px;
+}
+
+footer .dados-contato span {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+footer .dados-contato img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*MENU HAMBURGUER*/
+
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.menu-mobile.active .bar {
+    background-color: white;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: #034C8C;
+    transition: 0.4s;
+}
+
+/* Menu de Navegação */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: #034C8C;
+    padding-top: 60px;
+    transition: 0.4s;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background: white;
+    text-decoration: none;
+    color: #034C8C;
+}
+
+/*Inverter cor */
+.inverter-cor {
+    filter: invert(1);
+}
+
+/* Estilo quando o menu está aberto */
+.menu.active {
+    right: 0;
+}
+
+/* Animação do Ícone ao abrir */
+.menu-mobile.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-mobile.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-mobile.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width:510px) {
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: fit-content;
+        gap: 1rem;
+    }
+
+    footer .dados-contato {
+        width: 90%;
+
+    }
+
+    .menu ul li {
+        padding: 15px 0;
+    }
+
+
+}
+
+@media (max-width:993px) {
+    .menu-mobile {
+        display: flex;
+    }
+
+    header .menu-desktop {
+        display: none;
+    }
+
+    footer .container-logo-f {
+        height: 150px;
+        margin-left: 0;
+    }
+
+    footer .dados-contato {
+        width: 60%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,99 @@
+/*Contato*/
+.contato {
+    display: block;
+    padding: 30px;
+}
+
+.contato .contato-container {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+
+}
+
+.contato .mapa-container {
+    margin-left: auto;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.contato .card-contato {
+    width: 200px;
+    height: 160px;
+    border: 1px solid rgba(205, 205, 205, 0.473);
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+    margin-bottom: 80px;
+
+}
+
+.contato .contato-container .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: #034C8C;
+    transform: translate(-50%, -50%);
+    border: 2px solid #034C8C;
+    left: 50%;
+
+
+}
+
+.contato .contato-container .texto {
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+    text-align: center;
+
+}
+
+.contato .titulo {
+    font-size: 3rem;
+    font-family: "Poppins", serif;
+}
+
+.contato .mensagem {
+    font-size: 1.3rem;
+    font-family: "Montserrat", serif;
+}
+@media (max-width:993px) {
+    .contato{
+        padding: 0;
+        
+    }
+    .contato .contato-container {
+        width: 100%;
+    }
+    .contato .mapa-container {
+        width: 100%;
+    }
+    .contato .titulo,.mensagem{
+        display: flex;
+        padding: 0 30px;
+
+        width: 100%;
+    }
+}
+@media (min-width:1230px) {
+    .contato {
+        display: flex;
+        
+    }
+    .contato .mapa-container {
+        width: 50%;
+    }
+
+
+}
+@media (min-width:1400px) {
+    .conteudo.pagina-contato{
+        padding: 0 50px;
+    }
+}

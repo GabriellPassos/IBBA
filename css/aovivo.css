@@ -1,0 +1,46 @@
+.mais-videos {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.mais-videos .yt-container {
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+.mais-videos button {
+    width: 250px;
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color:#034C8C;
+    color: white;
+    
+}
+@media (max-width:992px) {
+    .mais-videos {
+        flex-direction: column;
+        gap:2rem;
+        padding: 2.2rem;
+    } 
+    .mais-videos button {
+        width: 100%;
+
+    }
+    .mais-videos .yt-container {
+    width: 100%;
+    height: 250px;
+    }
+}
+@media (max-width:510px) {
+.mais-videos .yt-container {
+    height: 190px;
+}
+}
