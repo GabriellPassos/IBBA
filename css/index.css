@@ -20,7 +20,7 @@
     margin: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem */
+    background-position-x: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição */
 
 }
@@ -51,6 +51,7 @@
 
 .slider-apresentacao button svg {
     height: 50px;
+    width: auto;
 
 }
 
@@ -85,6 +86,11 @@ button:last-of-type {
 
 .curved-section-conteudo {
     padding: 50px;
+    background-color: #00000062;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    
 }
 
 .curved-section-conteudo section {
@@ -128,7 +134,8 @@ button:last-of-type {
     transform: rotate(180deg);
 }
 
-.curved-section svg {
+.curved-section .curved-section-top svg,
+.curved-section .curved-section-bottom svg {
     display: block;
     width: calc(100% + 1.3px);
     position: relative;
