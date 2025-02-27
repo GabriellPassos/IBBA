@@ -40,7 +40,7 @@
         align-items: center;
         width: 100%;
         overflow: hidden;
-        height: 300px;
+        height: 420px;
 
     }
     .quem-somos .img-container img {
@@ -53,10 +53,23 @@
         
     }
     .quem-somos .texto-container{
-        width: 80%;
-        padding-left: 30px;
+        width: 100%;
+        padding: 30px;
     }
     .quem-somos .texto-container .titulo {
         font-size: 3rem;
+    }
+}
+@media (max-width:510px) {
+    .quem-somos .texto-container .titulo{
+        font-size: 2.2rem;
+    }
+    .quem-somos .texto-container .texto{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .quem-somos .texto-container{
+        width: 100%;
+        padding: 0 30px;
     }
 }
