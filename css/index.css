@@ -82,6 +82,7 @@ button:last-of-type {
     background-position: center;
     /*background-blend-mode: luminosity;*/
     transform: translate(0px);
+    border:none;
 }
 
 .curved-section-conteudo {
@@ -244,6 +245,8 @@ button:last-of-type {
 
 @media (max-width:993px) {
     .cartao-visita span {
-        padding: 0 0 0 30px;
+        font-size: 3rem;
+        margin: auto;
+        text-align: center;
     }
 }
